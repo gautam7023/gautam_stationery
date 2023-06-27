@@ -1,0 +1,277 @@
+<html>
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+        <title>Gautam Stationery</title>
+        <link href="./icon.webp" rel="icon">
+        <link rel="stylesheet" href="./style.css">
+        <script>
+            var arr=new Array('Shop Banner.jpg','Shop Banner 2.jpg','C.jpg');
+            var pos=0;
+            function forward()
+            {
+                if(pos<arr.length-1)
+                {
+                    pos++;
+                }
+                else
+                {
+                    pos=0;
+                }
+                document.getElementById("pic").src=arr[pos];
+                if(pos==0)
+                {
+                    document.getElementById("b1").checked=true;
+                    document.getElementById("b2").checked=false;
+                    document.getElementById("b3").checked=false;
+                }
+                if(pos==1)
+                {
+                    document.getElementById("b1").checked=false;
+                    document.getElementById("b2").checked=true;
+                    document.getElementById("b3").checked= false;
+                }
+                if(pos==2)
+                {
+                    document.getElementById("b1").checked= false;
+                    document.getElementById("b2").checked= false;
+                    document.getElementById("b3").checked= true;
+                }
+            }
+            function back()
+            {
+                if(pos>0)
+                {
+                   pos--;
+                }
+                else
+                {
+                   pos=arr.length-1;
+                }
+                document.getElementById("pic").src=arr[pos];
+
+                //Code For Slider buttom Movement
+
+                if(pos==0)
+                {
+                    document.getElementById("b1").checked=true;
+                    document.getElementById("b2").checked=false;
+                    document.getElementById("b3").checked=false;
+                }
+                if(pos==1)
+                {
+                    document.getElementById("b1").checked=false;
+                    document.getElementById("b2").checked=true;
+                    document.getElementById("b3").checked= false;
+                }
+                if(pos==2)
+                {
+                    document.getElementById("b1").checked= false;
+                    document.getElementById("b2").checked= false;
+                    document.getElementById("b3").checked= true;
+                }
+
+            }
+            function fun1(n)
+            {
+                pos=n;
+                document.getElementById("pic").src=arr[n];
+            }
+               //End Of For Slider buttom Movement
+        </script>
+    </head>
+        <body>
+            <div id="main">
+                <div id="header">
+                    <marquee behavior="alternate" style="padding: 10px;"><b><i>Gautam Stationery Deals:-We sales All type Stationary items(Official,School,Sports,Gift,Games etc.)
+                        Address:-Near LNJ College gate Jhanjharpur,Madhubani,Pin:-847404
+                        </i></b></marquee>
+                </div>
+                <!--Slider Start-->
+                <div id="banner">
+                    <img src="./Shop Banner.jpg" id="pic">
+                    <div id="button">
+                        <img src="./back buton.png" onclick="back()">
+                        <img src="./forward.png" style="float:right;" onclick="forward()">
+                    </div>
+                    <div id="radio1">
+                        <input type="radio" name="r1" id="b1" checked onclick="fun1('0');">
+                        <input type="radio" name="r1" id="b2" onclick="fun1('1');">
+                        <input type="radio" name="r1" id="b3" onclick="fun1('2');">
+                    </div>
+                </div>
+                <!--Slider End-->
+                <!--Menu start-->
+                <div id="menu">
+                    <ul id="topmenu">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#content">About</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#brand">Brand</a></li>
+                    </ul>
+                </div>
+                <!--Menu End-->
+
+                <!--Details Start-->
+                <div id="details">
+                    <div id="ad">
+                        <img src="./shop gif2.gif">
+                    </div>
+                    <div id="content">
+                        <div class="bekar">
+                                <fieldset style="padding: 10px;">
+                                    <legend style="text-align: center;"><b><i>About Us</i></b></legend>
+                                    Gautam Stationery (GS) is one of the leading stationery suppliers in Court Chowk Jhanjharpur. We have been in the forefront of the office stationery related services since 1999.<br><br>
+                                    We provide you with the best products and service available. Customer satisfaction is our main objective. To show our commitment we offer good service guarantee on all our products as well as the products, which we deal with.<br><br>
+                                    <b style="color: #3a89bd;">Our main activities are as follows:</b><br><br>
+                                    * Supply of all office stationery items.<br>
+                                    * Supply of all students needs.<br>
+                                    * Supply of all Sports good.<br><br>
+                                </fieldset>
+                                <hr/>
+                                <h3 id="contact">Contact Us</h3>
+                                <fieldset>
+                                    <div id="map" style="float: right;width:50%; border-radius: 10px; box-shadow: 0px 0px 3px gray;">
+                                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3578.332615524069!2d86.27233351178205!3d26.25086623814179!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39ee79370f395b51%3A0x5ecbe0b5a1be75e0!2sGautam%20Stationary%20and%20Book%20Centre!5e0!3m2!1sen!2sin!4v1657278725394!5m2!1sen!2sin" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                    </div>
+                                    <legend style="text-align: center;"><B><i>Contact US</i></B></legend>
+                                    <b>Gautam Stationery</b><br>
+                                    <i class="fas fa-map-marker-alt"></i> &nbsp;:- Near LNJ College gate <br>Jhanjharpur,Madhubani,Pin:-847404<br>
+                                    <i class="fas fa-phone-alt"></i> &nbsp;:-8676018595<br>
+                                    <a href="https://wa.me/8676018595" target="_blank">
+                                        <i class="fab fa-whatsapp"> &nbsp;:-8676018595</i>
+                                    </a><br>
+                                    <a href="https://www.instagram.com/gautam_stationery/" target="_blank">
+                                        <i class="fab fa-instagram"> &nbsp;:-gautam_stationery</i>
+                                    </a><br>
+                                    <a href="https://www.facebook.com/SatyaGauti/" target="_blank">
+                                        <i class="fab fa-facebook"> &nbsp;:-Rajdev Prasad</i>
+                                    </a><br>
+                                    <a href="https://gautam7023.github.io/gautam_stationery.github.io/" target="_blank">
+                                        <i class="fa fa-globe" aria-hidden="true">&nbsp;:-gautam_stationery</i>
+                                    </a><br>
+                                </fieldset>
+                                <hr/>
+                                <fieldset id="brand">
+                                    <legend style="text-align:center;"><b><i>Top Brand</i></b></legend>
+                                    <div style="width: 50%; float: left;">
+                                        <ul>
+                                            <li>Classmate</li>
+                                            <li>Camlin</li>
+                                            <li>Yuva</li>
+                                            <li>Navneet</li>
+                                            <li>Century</li>
+                                            <li>Shape</li>
+                                            <li>Doms</li>
+                                            <li>Apsara</li>
+                                            <li>Kangarro</li>
+                                            <li>Parker</li>
+                                            <li>Cello</li>
+                                            <li>Luxor</li>
+                                            <li>Linc</li>
+                                            <li>Flair</li>
+                                            <li>Rylonds</li>
+                                            <li>Pidilite</li>
+                                        </ul>
+                                    </div>
+                                    <diV style="width: 50%; float: right;">
+                                        <ul>
+                                            <li>Manorhma</li>
+                                            <li>Rekha</li>
+                                            <li>Kiran</li>
+                                            <li>Oxford</li>
+                                            <li>Arihant</li>
+                                            <li>Lucent</li>
+                                            <li>BTC</li>
+                                            <li>Bharti Bhawan</li>
+                                            <li>NCERT</li>
+                                            <li>Spark</li>
+                                            <li>Uphar</li>
+                                            <li>Bhargav</li>
+                                            <li>Golden</li>
+                                            <li>Natraj</li>
+                                            <li>Faber-Castell</li>
+                                            <li>Guru</li>
+                                        </ul>
+                                    </diV>
+                                </fieldset>
+                    </div>
+                    </div>
+                    <div id="misc">
+                        <div id="news">
+                            <mark>Availability Update</mark>
+                            <marquee direction="up" behavior="scroll" height="80%" onmouseover="stop();" onmouseout="start();">
+                                <ol>
+                                    <li>Good Discount and deals On All items</li>
+                                    <li>BA 1st Part Guess Paper Available</li>
+                                    <li>BA 2nd Part Guess Paper Available</li>
+                                    <li>BA 3rd Part Guess Paper Available</li>
+                                    <li>Pg Guess Paper available</li>
+                                    <li>Competative Exam books available</li>
+                                    <li>All Sports Good Available</li>
+                                    <li>All Stationary Items Available</li>
+                                    <li>Decorative Items Available</li>
+                                    <li>Gift Items Avaialable</li>
+                                    <li><a href="./Shop invoice/index.html">Download Shop Invoice</a></li>
+                                </ol>
+                            </marquee>
+                        </div>
+                        <div id="event">
+                            <marquee behavior="scroll" direction="left">
+                                <img src="./park.png">
+                                <img src="./shop logo2.jpeg">
+                                <img src="./camlin.png">
+
+                            </marquee>
+                        </div>
+                        <div id="event">
+                            <marquee behavior="scroll" direction="left">
+                                <img src="./logo 5.jpg">
+                                <img src="./logo6.jpg">
+                                <img src="./logo 7.jpg">
+
+                            </marquee>
+                        </div>
+                    </div>
+
+                <!--Details End-->
+
+
+            </div>
+            <script>
+                function forward1()
+            {
+                document.getElementById("pic").src=arr[pos];
+                if(pos==0)
+                {
+                    document.getElementById("b1").checked=true;
+                    document.getElementById("b2").checked=false;
+                    document.getElementById("b3").checked=false;
+                }
+                if(pos==1)
+                {
+                    document.getElementById("b1").checked=false;
+                    document.getElementById("b2").checked=true;
+                    document.getElementById("b3").checked=false;
+                }
+                if(pos==2)
+                {
+                    document.getElementById("b1").checked=false;
+                    document.getElementById("b2").checked=false;
+                    document.getElementById("b3").checked=true;
+                }
+
+                if(pos<arr.length-1){pos++;}
+                else{pos=0}
+
+                setTimeout("forward1()",2000)
+            }
+            forward1();
+            </script>
+        </body>
+</html>
